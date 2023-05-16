@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap");
+
+:root {
+  --color-white: #fff;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #fb5;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-background);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: var(--color-dark);
+  width: 25%;
+  padding: 45px 0 10px 0;
+  border-radius: 20px;
+}
+
+
+.dark-theme-variables {
+  --color-dark: #d0d1d7;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --color-info-light: #262623;
+  --color-dark-variant: #a3bdcc;
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --box-shadow: 0 2rem 3rem var(--color-light)
+}
+
+h1 {
+  color: var(--color-dark);
+}
+
+.head {
+  margin: 0 auto;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-toggler {
+  display: flex;
+  background-color: var(--color-dark);
+  height: 2rem;
+  width: 3.8rem;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.head .theme-toggler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head span.active {
+  background-color: var(--color-success);
+  border-radius: 0.5rem;
+  color: var(--color-white);
+}
+
+
+.head-text {
+  font-size: 1rem;
+  padding: 0 0 7px 195px;
+  color: var(--color-info-light);
+}
+
+.button {
+  padding: 20px;
+  margin: 0 4px;
+  width: 5vw;
+  font-size: 1.25rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-info-light);
+  background-color: var(--color-dark-variant);
+  box-shadow: 1px 1px 3px var(--color-info-light);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.row {
+  margin: 8px 0;
+}
+
+.row input {
+  margin: 0;
+  padding: 10px 20px;
+  width: 19vw;
+  border: 2px solid var(--color-dark);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: var(--color-dark);
+  color: var(--color-info-light);
+  box-shadow: 1px 1px 5px var(--color-info-light);
+}
+
+.corner-operators {
+  background-color: var(--color-info-light);
+  color: var(--color-dark-variant);
+}
+
+.top-operators {
+  background-color: var(--color-info-light);
+  color: var(--color-dark-variant);
+}
